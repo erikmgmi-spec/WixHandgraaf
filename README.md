@@ -8,7 +8,7 @@ The site is a static HTML deployment hosted on Netlify. Netlify publishes the re
 
 - Production branch: `main`
 - Entry point: `index.html`
-- Planned custom domain: `estate.handgraafestates.com`
+- Production domain: `systems.handgraafestates.com`
 - Demo dashboard: https://demo.handgraafestates.com
 
 ## Updating the site
@@ -20,4 +20,4 @@ The site is a static HTML deployment hosted on Netlify. Netlify publishes the re
 
 ## Domain setup
 
-Add `estate.handgraafestates.com` to the Netlify project's Production domains first. Then create a Wix DNS CNAME record with host `estate` pointing to the project's `.netlify.app` hostname.
+The Netlify primary domain is `systems.handgraafestates.com`. Its DNS CNAME record uses host `systems` and points to `estatehandgraafestates.netlify.app`.
