@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Private estate management in La Jolla, Rancho Santa Fe and Del Mar. We place household staff and direct them inside a single written record of your property.">
+<link rel="canonical" href="https://systems.handgraafestates.com/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Handgraaf Estates">
+<meta property="og:title" content="Estate Management — Handgraaf Estates">
+<meta property="og:description" content="Private estate management in La Jolla, Rancho Santa Fe and Del Mar. We place household staff and direct them inside a single written record of your property.">
+<meta property="og:url" content="https://systems.handgraafestates.com/">
+<meta property="og:image" content="https://static.wixstatic.com/media/dadeb7_7730ba1ba48745869e3cc3f966817ce6~mv2.jpg/v1/fill/w_2500,h_2355,al_c/dadeb7_7730ba1ba48745869e3cc3f966817ce6~mv2.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Estate Management — Handgraaf Estates">
+<meta name="twitter:description" content="Private estate management in La Jolla, Rancho Santa Fe and Del Mar. We place household staff and direct them inside a single written record of your property.">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","@id":"https://www.handgraafestates.com/estate-management#service","name":"Private Estate Management","serviceType":"Estate management","provider":{"@id":"https://www.handgraafestates.com/#organization"},"description":"Private estate management for principals in coastal San Diego and beyond: household staff direction, vendor oversight, preventative maintenance, project management and expenditure records, held in a single written record per property.","areaServed":[{"@type":"City","name":"La Jolla"},{"@type":"City","name":"Rancho Santa Fe"},{"@type":"City","name":"Del Mar"},{"@type":"City","name":"Coronado"},{"@type":"City","name":"San Diego"},{"@type":"Country","name":"United States"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Do I have to replace the staff I already have?","acceptedAnswer":{"@type":"Answer","text":"No. Existing staff and vendors are retained unless you ask otherwise. Intake catalogues who already works at the property and what they are responsible for, and they continue inside the record rather than outside it."}},{"@type":"Question","name":"What does estate management cost?","acceptedAnswer":{"@type":"Answer","text":"It is scoped per principal, because an owner with one residence is not buying the same engagement as one with four homes and a vessel. Cost is driven by property count, staff headcount, asset classes and travel. We quote after the walkthrough, not before."}},{"@type":"Question","name":"How is this different from estate management software?","acceptedAnswer":{"@type":"Answer","text":"Software is sold to you and then operated by you. The system here is operated by the manager who runs your estate, and it is populated as the work happens rather than by you entering data. You receive the record; you are not asked to maintain it."}},{"@type":"Question","name":"Who can see my records?","acceptedAnswer":{"@type":"Answer","text":"Only named accounts you approve. Each estate is a separate, isolated database enforced at the database itself, not hidden behind a shared login. No owner's records touch another's, and there is no shared client directory."}},{"@type":"Question","name":"What happens if we stop working together?","acceptedAnswer":{"@type":"Answer","text":"The record of your home stays with your home. Access is revocable by you at any time, and the estate does not restart from zero if the manager changes \u2014 including if the manager is us."}},{"@type":"Question","name":"Do you manage homes outside San Diego?","acceptedAnswer":{"@type":"Answer","text":"Yes. Out-of-state and overseas residences run the identical workflow and appear on the same calendar in the same format. Our household staffing division also places nationally, with placements made in Miami, Atherton and Los Angeles."}},{"@type":"Question","name":"Is AI making decisions about my property?","acceptedAnswer":{"@type":"Answer","text":"No. We use current tooling inside our own practice to structure records, draft scopes of work and summarise vendor history. A person signs off on every record before it reaches your dashboard, and your data is never used as training material."}}]}</script>
+<title>Estate Management — Handgraaf Estates</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Mulish:wght@300;400;500;600;700&family=Jost:wght@400;500;600&display=swap">
+<style>
+  :root{
+    --cream:#FFFFFF; --surface:#FFFFFF; --ink:#000000; --body:#2A2A2A;
+    --muted:#525252; --faint:#6E6E6E; --rule:#DCDCDC; --hair:#EBEBEB;
+    --accent:#000000; --accent-hi:#2A2A2A; --sand:#F4F4F4; --brass:#9B9B9B;
+    --pad: clamp(24px, 7vw, 180px);
+    --serif:'Libre Baskerville', Georgia, 'Times New Roman', serif;
+    --display:'Jost', 'Avenir Next', Helvetica, Arial, sans-serif;
+    --sans:'Mulish', 'Avenir Next', 'Helvetica Neue', Arial, sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{max-width:100%;overflow-x:hidden;}
+  body{margin:0;background:var(--cream);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;}
+  a{color:var(--accent);text-decoration:none;}
+  a:hover{color:var(--accent-hi);}
+  h1,h2{font-family:var(--serif);font-weight:400;letter-spacing:-0.012em;margin:0;text-wrap:pretty;}
+  h1{font-size:clamp(29px,4.1vw,52px);line-height:1.16;letter-spacing:-.02em;}
+  h2{font-size:clamp(22px,2.4vw,31px);line-height:1.32;letter-spacing:-.014em;}
+  p{margin:0;font-weight:400;line-height:1.7;color:var(--body);font-size:clamp(16px,1.2vw,17px);}
+  .eyebrow{font-family:var(--display);font-weight:600;font-size:11px;letter-spacing:0.26em;text-transform:uppercase;color:var(--faint);}
+  .sec{padding:clamp(52px,7vw,92px) var(--pad);}
+  .rule{height:1px;background:var(--rule);border:0;margin:0;}
+  .two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(32px,5vw,80px);align-items:start;}
+  .col{display:flex;flex-direction:column;gap:22px;}
+  .btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 34px;
+       font-size:15px;letter-spacing:0.06em;background:var(--accent);color:var(--surface);}
+  .btn:hover{background:var(--accent-hi);color:var(--surface);}
+  .btn-ghost{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 30px;
+       font-size:15px;letter-spacing:0.06em;border:1px solid var(--rule);color:var(--ink);}
+  .btn-ghost:hover{border-color:var(--accent);color:var(--accent);}
+  .actions{display:flex;gap:16px;flex-wrap:wrap;margin-top:14px;}
+  .card{background:var(--surface);border:1px solid var(--rule);padding:26px;display:flex;flex-direction:column;gap:12px;}
+  .kv{display:flex;justify-content:space-between;gap:16px;padding:15px 0;border-bottom:1px solid var(--hair);font-size:15px;}
+  .kv:last-of-type{border-bottom:0;}
+  .kv span:first-child{color:var(--muted);font-weight:300;}
+  .steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;}
+  .step{display:flex;flex-direction:column;gap:14px;padding-top:22px;border-top:2px solid var(--ink);}
+  .step:first-child{border-top-color:var(--accent);}
+  .num{font-family:var(--serif);font-size:24px;color:var(--accent);line-height:1;}
+  .step b{font-size:17px;font-weight:500;}
+  .step p{font-size:15px;color:var(--muted);line-height:1.65;}
+  .pull{background:var(--sand);padding:28px 32px;font-size:16px;line-height:1.7;color:var(--body);font-weight:300;}
+  .stages{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px;}
+  .stage{background:var(--surface);border:1px solid var(--rule);padding:22px 20px;display:flex;flex-direction:column;gap:10px;min-height:132px;}
+  .stage .tag{font-size:11px;letter-spacing:0.16em;text-transform:uppercase;color:var(--faint);}
+  .stage .ttl{font-size:16px;line-height:1.45;}
+  .stage .sub{font-size:13px;color:var(--faint);font-weight:300;margin-top:auto;}
+  .stage.mine{border-color:var(--accent);}
+  .stage.mine .tag,.stage.mine .ttl,.stage.mine .sub{color:var(--accent);}
+  .stage.done{background:var(--cream);border-color:var(--hair);}
+  .stage.done .ttl{color:var(--muted);}
+  .bubbles{display:flex;align-items:center;gap:24px;flex-wrap:wrap;}
+  .bub{border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;
+       gap:5px;text-align:center;padding:12px;color:var(--surface);}
+  .bub .lab{font-size:11px;letter-spacing:0.16em;text-transform:uppercase;opacity:.78;}
+  .bub .val{font-family:var(--serif);font-size:16px;line-height:1.35;}
+  .b1{width:172px;height:172px;background:var(--accent);}
+  .b2{width:138px;height:138px;background:#6E6E6E;}
+  .b3{width:112px;height:112px;background:var(--sand);border:1px solid var(--rule);color:var(--body);}
+  .b3 .lab{color:var(--faint);} .b3 .val{font-size:17px;}
+  .three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;}
+  .three b{font-size:17px;font-weight:500;}
+  .three p{font-size:15px;color:var(--muted);line-height:1.65;}
+  .cal{background:var(--surface);border:1px solid var(--rule);display:flex;flex-direction:column;}
+  .cal .hd{padding:18px 24px;border-bottom:1px solid var(--hair);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);}
+  .row{display:flex;gap:18px;padding:16px 24px;border-bottom:1px solid var(--hair);align-items:baseline;}
+  .row .d{width:54px;flex-shrink:0;font-size:13px;color:var(--faint);}
+  .row .t{font-size:15px;font-weight:300;}
+  .row.you{background:#F7F2E8;} .row.you .d,.row.you .t{color:var(--accent);font-weight:400;}
+  .cal .ft{padding:16px 24px;background:var(--sand);font-size:13px;color:var(--body);font-weight:300;}
+  .note{font-size:12px;color:var(--faint);font-weight:300;line-height:1.6;}
+  .cta{background:var(--ink);color:var(--cream);padding:clamp(56px,7vw,96px) var(--pad);display:flex;flex-direction:column;gap:26px;align-items:flex-start;}
+  .cta h2{font-size:clamp(24px,2.9vw,37px);color:var(--cream);letter-spacing:-.014em;}
+  .cta p{color:#C2C2C2;font-size:18px;max-width:620px;}
+  .cta .btn{background:var(--cream);color:var(--ink);}
+  .cta .btn:hover{background:#fff;color:var(--ink);}
+  .cta .btn-ghost{border-color:#575045;color:var(--cream);}
+  .cta .btn-ghost:hover{border-color:var(--cream);color:#fff;}
+  .bar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:22px var(--pad);border-bottom:1px solid var(--rule);}
+  .word{font-family:var(--display);font-weight:600;font-size:14px;letter-spacing:.2em;text-transform:uppercase;}
+  .ft{padding:36px var(--pad);display:flex;align-items:center;justify-content:space-between;gap:20px;
+      font-size:13px;color:var(--faint);font-weight:300;flex-wrap:wrap;}
+  .frame{border:1px solid var(--rule);background:var(--surface);overflow:hidden;max-width:100%;}
+  .frame .chrome{display:flex;align-items:center;gap:9px;padding:12px 16px;background:var(--sand);border-bottom:1px solid var(--rule);}
+  .dot{width:9px;height:9px;border-radius:50%;background:#C2C2C2;flex-shrink:0;}
+  .frame .url{font-size:12px;color:var(--faint);letter-spacing:.04em;margin-left:8px;}
+  .tabs{display:flex;border-bottom:1px solid var(--hair);overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;max-width:100%;}
+  .tabs::-webkit-scrollbar{display:none;}
+  .tabs span{padding:14px 18px;font-size:13px;color:var(--muted);white-space:nowrap;font-weight:300;}
+  .tabs span.on{color:var(--accent);border-bottom:2px solid var(--accent);font-weight:500;}
+  .fin{width:100%;border-collapse:collapse;font-size:14px;}
+  .fin th{text-align:left;font-weight:500;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--faint);padding:14px 18px;border-bottom:1px solid var(--rule);}
+  .fin th.n,.fin td.n{text-align:right;}
+  .fin td{padding:13px 18px;border-bottom:1px solid var(--hair);font-weight:300;}
+  .fin td.n{font-variant-numeric:tabular-nums;font-weight:400;}
+  .fin tr.tot td{border-bottom:0;border-top:2px solid var(--rule);font-weight:500;background:#F7F2E8;}
+  .pill{display:inline-block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:3px 8px;border:1px solid var(--rule);color:var(--faint);margin-left:10px;}
+  .frame .bar2{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:14px 18px;background:#F7F5EF;border-top:1px solid var(--hair);flex-wrap:wrap;font-size:13px;color:var(--muted);font-weight:300;}
+  .chip{border:1px solid var(--rule);padding:7px 14px;font-size:12px;letter-spacing:.06em;color:var(--ink);}
+  .pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,4vw,64px);}
+  .listed{display:flex;flex-direction:column;gap:20px;}
+  .listed div{display:flex;gap:16px;align-items:baseline;}
+  .listed .k{font-family:var(--serif);font-size:16px;color:var(--accent);width:38px;flex-shrink:0;line-height:1.35;}
+  .listed p{font-size:16px;}
+  .listed b{font-weight:500;color:var(--ink);}
+  .band{background:var(--sand);padding:clamp(44px,6vw,80px) var(--pad);display:flex;flex-direction:column;gap:36px;}
+  @media (max-width: 900px){
+    .two,.steps,.stages,.three,.pair{grid-template-columns:1fr;}
+    .fin th:nth-child(3),.fin td:nth-child(3),.fin th:nth-child(4),.fin td:nth-child(4){display:none;}
+    .steps{gap:22px;}
+    .step{border-top-color:var(--accent);}
+    .actions .btn,.actions .btn-ghost{flex:1 1 100%;}
+    .b1{width:132px;height:132px;} .b2{width:108px;height:108px;} .b3{width:88px;height:88px;}
+    .bub .val{font-size:17px;} .b3 .val{font-size:14px;}
+  }
+
+  .scalestrip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);}
+  .sf{padding:26px 28px;border-left:1px solid var(--hair);}
+  .sf:first-child{border-left:none;padding-left:0;}
+  .sv{display:block;font-family:var(--serif);font-size:clamp(26px,2.8vw,36px);line-height:1;color:var(--accent);letter-spacing:-.02em;}
+  .sl{display:block;margin-top:9px;font-size:14px;color:var(--muted);max-width:24ch;}
+  .scalenote{margin-top:16px;font-size:14px;color:var(--faint);max-width:62ch;}
+  .qa .q{font-family:var(--serif);font-size:17px;color:var(--ink);margin-top:30px;line-height:1.3;}
+  .qa .q:first-child{margin-top:0;}
+  .qa .a{margin-top:9px;color:var(--body);padding-bottom:26px;border-bottom:1px solid var(--hair);}
+  .qa .a:last-child{border-bottom:none;}
+  @media (max-width:760px){
+    .scalestrip{grid-template-columns:1fr;}
+    .sf{border-left:none;padding-left:0;border-top:1px solid var(--hair);}
+    .sf:first-child{border-top:none;padding-top:0;}
+  }
+</style>
+</head>
+<body>
+
+<div class="bar">
+  <div class="word">Handgraaf Estates</div>
+  <a href="https://www.handgraafestates.com/" style="font-size:13px;letter-spacing:.08em;color:var(--muted);">&#8592; handgraafestates.com</a>
+</div>
+
+<div class="sec" style="display:flex;flex-direction:column;gap:28px;align-items:flex-start;">
+  <div class="eyebrow">Estate Management</div>
+  <h1 style="max-width:960px;">The people who run your estate, and the system that remembers it.</h1>
+  <p style="max-width:660px;font-size:clamp(17px,1.4vw,19px);">Handgraaf Estates places and directs private service teams &mdash; and every one of them works inside a single written record of your property. Vendors, service history, maintenance, projects and annual spend, in one place you can open at any moment.</p>
+  <div class="actions">
+    <a class="btn" href="https://demo.handgraafestates.com">Request a demo on our dashboard</a>
+    <a class="btn-ghost" href="https://www.handgraafestates.com/#contact">Speak with the Handgraaf Team</a>
+  </div>
+</div>
+
+<div style="background:var(--ink);color:var(--cream);padding:clamp(30px,3.4vw,44px) var(--pad);">
+  <p style="color:#C2C2C2;font-size:clamp(16px,1.35vw,18px);max-width:940px;line-height:1.7;">Software firms sell you a system and leave you to operate it. Staffing agencies send people and leave no record behind them. <span style="color:var(--cream);">We do both, and the record is the proof.</span></p>
+</div>
+
+<hr class="rule">
+
+<div class="sec">
+  <div class="scalestrip">
+    <div class="sf"><span class="sv">100,000+</span><span class="sl">square feet under active management</span></div>
+    <div class="sf"><span class="sv">12+</span><span class="sl">estates currently on the record</span></div>
+    <div class="sf"><span class="sv">One</span><span class="sl">isolated database per owner</span></div>
+  </div>
+  <p class="scalenote">A floor, not a running count. We do not name the estates we manage, and we do not publish a client list.</p>
+</div>
+
+<hr class="rule">
+
+<div class="sec" style="display:flex;flex-direction:column;gap:40px;">
+  <div class="col" style="max-width:820px;">
+    <div class="eyebrow">Scope</div>
+    <h2>Not every estate is a house</h2>
+    <p>A principal's holdings rarely stop at the front door. The record is built to the assets you actually own &mdash; and each one carries the same maintenance intervals, vendor accountability and cost history as the residences.</p>
+  </div>
+  <div class="three" style="grid-template-columns:repeat(4,minmax(0,1fr));">
+    <div class="card"><b>Real estate</b><p>Primary, secondary and investment properties, domestic and abroad &mdash; each with its own zones, systems and staff.</p></div>
+    <div class="card"><b>Aviation</b><p>Aircraft coordination alongside the rest of the portfolio: scheduled inspection intervals, service records and vendor documentation.</p></div>
+    <div class="card"><b>Marine</b><p>Vessels tracked with the same rigour as a residence &mdash; haul-outs, bottom work, crew coordination and yard invoices.</p></div>
+    <div class="card"><b>Automotive &amp; collections</b><p>Collection vehicles, daily fleet, art and valuables &mdash; service history, appraised value and condition on record.</p></div>
+  </div>
+  <div class="pull" style="max-width:940px;">Scope is agreed per principal. An owner with one residence is not sold the same engagement as one with four homes, an aircraft and a vessel &mdash; and neither pays for the other's complexity.</div>
+</div>
+
+<hr class="rule">
+
+<div class="sec two">
+  <div class="col">
+    <div class="eyebrow">One&nbsp;/&nbsp;Consolidation</div>
+    <h2>Everything in one view</h2>
+    <p>Vendor contacts, warranties, service history, receipts and every scheduled visit typically live in a dozen places &mdash; a phone, an inbox, a filing cabinet, and one person's memory.</p>
+    <p>We consolidate them into a single record per property. Nothing depends on any one person still being here.</p>
+  </div>
+  <div class="card" style="padding:30px 32px;gap:0;">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;gap:14px;padding-bottom:18px;border-bottom:1px solid var(--hair);">
+      <div style="font-family:var(--serif);font-size:25px;">La Jolla Residence</div>
+      <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);">Primary</div>
+    </div>
+    <div class="kv"><span>Vendors on file</span><span>24</span></div>
+    <div class="kv"><span>Scheduled services, next 90 days</span><span>11</span></div>
+    <div class="kv"><span>Open projects</span><span>3</span></div>
+    <div class="kv"><span>Warranties tracked</span><span>17</span></div>
+    <div class="kv"><span>Receipts logged, year to date</span><span>146</span></div>
+    <div class="note" style="margin-top:20px;">Illustrative &mdash; the demo estate is fictional.</div>
+  </div>
+</div>
+
+<hr class="rule">
+
+<div class="sec" style="display:flex;flex-direction:column;gap:44px;">
+  <div class="col" style="max-width:760px;">
+    <div class="eyebrow">Two&nbsp;/&nbsp;Method</div>
+    <h2>Estate management is not a foreign language</h2>
+    <p>It is a workflow, and it reads the same whether the asset is fifteen minutes away or in another state. Four steps, repeated, recorded every time.</p>
+  </div>
+  <div class="steps">
+    <div class="step"><div class="num">01</div><b>Intake</b><p>Every asset, zone, vendor and warranty catalogued once, per property.</p></div>
+    <div class="step"><div class="num">02</div><b>Schedule</b><p>Preventative work is placed on a calendar before it becomes a repair.</p></div>
+    <div class="step"><div class="num">03</div><b>Execute</b><p>Vendors are dispatched, supervised and closed out by your manager.</p></div>
+    <div class="step"><div class="num">04</div><b>Record</b><p>Invoice, photo and outcome attach to the asset &mdash; permanently.</p></div>
+  </div>
+  <div class="pull" style="max-width:900px;">Out-of-state assets run the identical workflow. A home in Jackson Hole, a vessel in San Diego and a residence in Italy appear on the same calendar, in the same format, with the same records behind them.</div>
+</div>
+
+<hr class="rule">
+
+<div class="sec" style="display:flex;flex-direction:column;gap:44px;">
+  <div class="col" style="max-width:760px;">
+    <div class="eyebrow">Three&nbsp;/&nbsp;Projects</div>
+    <h2>See the project without living in it</h2>
+    <p>You should know where a renovation stands without fielding contractor calls. Each project moves through defined stages, and you can look in at any moment &mdash; or not at all.</p>
+  </div>
+  <div class="stages">
+    <div class="stage"><div class="tag">Scoping</div><div class="ttl">Guest bath refresh</div><div class="sub">Awaiting measurements</div></div>
+    <div class="stage"><div class="tag">Bids</div><div class="ttl">Driveway resurfacing</div><div class="sub">3 of 3 received</div></div>
+    <div class="stage mine"><div class="tag">Your approval</div><div class="ttl">Pool equipment replacement</div><div class="sub">One decision needed</div></div>
+    <div class="stage"><div class="tag">In progress</div><div class="ttl">Exterior repaint, north elevation</div><div class="sub">Day 6 of 14</div></div>
+    <div class="stage done"><div class="tag">Complete</div><div class="ttl">Irrigation controller</div><div class="sub">Invoice on file</div></div>
+  </div>
+  <p style="max-width:820px;">Only one column ever asks anything of you. The rest is visibility.</p>
+</div>
+
+<hr class="rule">
+
+<div class="sec two" style="align-items:center;">
+  <div class="col">
+    <div class="eyebrow">Four&nbsp;/&nbsp;Expenditure</div>
+    <h2>Know what the year costs before it costs it</h2>
+    <p>Every expense is classified as capital or operating as it is recorded, so the annual picture builds itself. Recurring service is predictable. Replacement cycles are foreseeable. Neither should arrive as a surprise.</p>
+    <p>Your accountant receives a clean export rather than a box of receipts.</p>
+  </div>
+  <div style="display:flex;flex-direction:column;gap:22px;">
+    <div class="bubbles">
+      <div class="bub b1"><div class="lab">CapEx</div><div class="val">Roof, systems, vehicles</div></div>
+      <div class="bub b2"><div class="lab">OpEx</div><div class="val">Recurring service</div></div>
+      <div class="bub b3"><div class="lab">Reserve</div><div class="val">Contingency</div></div>
+    </div>
+    <div class="note">Proportions illustrative. Your figures populate from your own records &mdash; nothing here is modelled from another estate.</div>
+  </div>
+</div>
+
+<div class="sec" style="padding-top:0;display:flex;flex-direction:column;gap:26px;">
+  <p style="max-width:820px;">This is the financial view as an owner sees it &mdash; three residences, every category, one page. No spreadsheet to assemble, no receipts to chase.</p>
+
+  <div class="frame">
+    <div class="chrome">
+      <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      <span class="url">demo.handgraafestates.com &mdash; Financials</span>
+    </div>
+    <div class="tabs">
+      <span>SOPs</span><span>Calendar</span><span>Projects</span><span>Maintenance</span><span>Vendors</span><span>Properties</span><span>Vehicles</span><span>Receipts</span><span class="on">Financials</span>
+    </div>
+    <div style="overflow-x:auto;">
+      <table class="fin">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th class="n">La Jolla</th>
+            <th class="n">Jackson Hole</th>
+            <th class="n">Italy</th>
+            <th class="n">Year to date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Landscape &amp; grounds <span class="pill">OpEx</span></td><td class="n">38,400</td><td class="n">9,600</td><td class="n">12,000</td><td class="n">60,000</td></tr>
+          <tr><td>Pool, spa &amp; water <span class="pill">OpEx</span></td><td class="n">14,200</td><td class="n">&mdash;</td><td class="n">4,800</td><td class="n">19,000</td></tr>
+          <tr><td>HVAC &amp; mechanical <span class="pill">OpEx</span></td><td class="n">9,800</td><td class="n">6,400</td><td class="n">3,900</td><td class="n">20,100</td></tr>
+          <tr><td>Housekeeping &amp; linens <span class="pill">OpEx</span></td><td class="n">52,000</td><td class="n">11,500</td><td class="n">18,000</td><td class="n">81,500</td></tr>
+          <tr><td>Roof &amp; envelope <span class="pill">CapEx</span></td><td class="n">&mdash;</td><td class="n">46,000</td><td class="n">&mdash;</td><td class="n">46,000</td></tr>
+          <tr><td>Vehicles &amp; vessel <span class="pill">CapEx</span></td><td class="n">21,300</td><td class="n">4,100</td><td class="n">&mdash;</td><td class="n">25,400</td></tr>
+          <tr class="tot"><td>Total</td><td class="n">135,700</td><td class="n">77,600</td><td class="n">38,700</td><td class="n">252,000</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="bar2">
+      <span>Every figure traces to a logged receipt and a named vendor.</span>
+      <span class="chip">Export for your CPA</span>
+    </div>
+  </div>
+  <div class="note">Demo estate &mdash; fictional properties and figures.</div>
+</div>
+
+<hr class="rule">
+
+<div class="sec" style="display:flex;flex-direction:column;gap:44px;">
+  <div class="col" style="max-width:760px;">
+    <div class="eyebrow">Five&nbsp;/&nbsp;Readiness</div>
+    <h2>A home that is ready, not reactive</h2>
+    <p>Most emergencies at an estate were visible months earlier. Organising the house is what makes them visible.</p>
+  </div>
+  <div class="three">
+    <div class="card"><b>Asset registry by zone</b><p>Every system in the house catalogued by area, with its age, warranty and service interval.</p></div>
+    <div class="card"><b>Seasonal open and close</b><p>Secondary residences prepared to a written standard before you arrive and after you leave.</p></div>
+    <div class="card"><b>Documented access</b><p>Who may enter, when, and under whose supervision &mdash; recorded rather than remembered.</p></div>
+  </div>
+</div>
+
+<hr class="rule">
+
+<div class="sec two">
+  <div class="col">
+    <div class="eyebrow">Six&nbsp;/&nbsp;Calendar</div>
+    <h2>A calendar you can actually read</h2>
+    <p>Household service does not belong in your personal calendar. It belongs in one estate calendar your manager maintains, from which you see only what genuinely requires you.</p>
+  </div>
+  <div class="cal">
+    <div class="hd">This week &mdash; estate</div>
+    <div class="row"><span class="d">Mon</span><span class="t">Landscape crew, weekly</span></div>
+    <div class="row"><span class="d">Tue</span><span class="t">HVAC filter change, all zones</span></div>
+    <div class="row you"><span class="d">Wed</span><span class="t">Pool equipment quote &mdash; your approval</span></div>
+    <div class="row"><span class="d">Thu</span><span class="t">Window cleaning, quarterly</span></div>
+    <div class="row"><span class="d">Fri</span><span class="t">Vessel bottom inspection</span></div>
+    <div class="ft">Five items this week. One reached you.</div>
+  </div>
+</div>
+
+<hr class="rule">
+
+<div class="sec pair">
+  <div class="col">
+    <div class="eyebrow">Seven&nbsp;/&nbsp;Control</div>
+    <h2>Delegation is not surrender</h2>
+    <p>The objection we hear most is that handing over the house means losing hold of it. The opposite is true: most owners have less control before a manager, not more, because nothing is written down.</p>
+  </div>
+  <div class="listed">
+    <div><span class="k">01</span><p><b>You set the threshold.</b> Work below an agreed figure proceeds. Above it, nothing moves without your approval.</p></div>
+    <div><span class="k">02</span><p><b>Every vendor is accountable to a record.</b> What was quoted, what was done, what was paid, and who authorised it.</p></div>
+    <div><span class="k">03</span><p><b>Nothing lives in one person's head.</b> If your manager changes &mdash; including us &mdash; the estate does not restart from zero.</p></div>
+    <div><span class="k">04</span><p><b>You can audit any line, any time.</b> Not on request, not next quarter. Open the tab.</p></div>
+  </div>
+</div>
+
+<hr class="rule">
+
+<div class="sec pair">
+  <div class="col">
+    <div class="eyebrow">Eight&nbsp;/&nbsp;Optics</div>
+    <h2>A house that presents the way you do</h2>
+    <p>An estate is seen &mdash; by guests, by family, by staff, by an insurer's adjuster on the worst day of the year. What they see is either a standard or an improvisation.</p>
+  </div>
+  <div class="listed">
+    <div><span class="k">01</span><p><b>Ready on arrival.</b> No scramble before you land, no apology for what was missed.</p></div>
+    <div><span class="k">02</span><p><b>Staff working to a written standard</b> rather than to memory, so quality does not move with personnel.</p></div>
+    <div><span class="k">03</span><p><b>Documentation that holds up.</b> Photographed condition, dated service, itemised value &mdash; for insurers, appraisers and counsel.</p></div>
+    <div><span class="k">04</span><p><b>Nothing improvised in front of guests.</b> The house looks effortless because the work happened weeks earlier.</p></div>
+  </div>
+</div>
+
+<hr class="rule">
+
+<div class="sec" style="display:flex;flex-direction:column;gap:26px;">
+  <div class="eyebrow">Nine&nbsp;/&nbsp;Discretion</div>
+  <h2 style="max-width:820px;">Your records are yours alone</h2>
+  <div class="three" style="margin-top:10px;">
+    <p>Each estate is a separate, isolated database. No owner's records touch another's, and there is no shared directory of clients.</p>
+    <p>Access is granted to named accounts only, enforced at the database itself &mdash; not merely hidden behind a login screen.</p>
+    <p>Access is revocable at any time, by you. Should our engagement end, the record of your home remains with your home.</p>
+  </div>
+</div>
+
+<div class="band">
+  <div class="col" style="max-width:760px;">
+    <div class="eyebrow">Engagement</div>
+    <h2>What the first ninety days look like</h2>
+    <p>Nothing here requires you to change how you live. It requires roughly four hours of your time, once.</p>
+  </div>
+  <div class="three">
+    <div style="display:flex;flex-direction:column;gap:12px;padding-top:20px;border-top:2px solid var(--accent);">
+      <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);">Days 1&ndash;30</div>
+      <b style="font-size:17px;font-weight:500;">Walkthrough and intake</b>
+      <p style="font-size:15px;color:var(--muted);">Every system, zone, vendor and warranty catalogued on site. Existing staff and vendors retained unless you say otherwise.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;padding-top:20px;border-top:2px solid var(--ink);">
+      <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);">Days 31&ndash;60</div>
+      <b style="font-size:17px;font-weight:500;">Schedule and standards</b>
+      <p style="font-size:15px;color:var(--muted);">Preventative calendar built, deferred maintenance surfaced and priced, approval thresholds agreed in writing.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:12px;padding-top:20px;border-top:2px solid var(--ink);">
+      <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);">Days 61&ndash;90</div>
+      <b style="font-size:17px;font-weight:500;">Running, and visible</b>
+      <p style="font-size:15px;color:var(--muted);">You receive access to your own dashboard. From here the record builds itself, and your involvement is by choice.</p>
+    </div>
+  </div>
+</div>
+
+<div class="sec pair">
+  <div class="col">
+    <div class="eyebrow">Continuity</div>
+    <h2>The system does not stand still</h2>
+    <p>Estate software is bought once and then ages. Ours is maintained continuously, because we operate it every day on live estates &mdash; when something is missing, it is built, and every principal benefits from it.</p>
+    <p>We use current tooling, including AI, inside our own practice: structuring records, drafting scopes of work, and summarising vendor history so your manager spends their hours on the property rather than the paperwork.</p>
+  </div>
+  <div class="listed">
+    <div><span class="k">01</span><p><b>A person signs off on every record.</b> Nothing reaches your dashboard as fact until a manager has reviewed it.</p></div>
+    <div><span class="k">02</span><p><b>Your data is not training material.</b> It is used to run your estate and for nothing else.</p></div>
+    <div><span class="k">03</span><p><b>Improvements arrive without a migration.</b> No version numbers, no upgrade projects, no retraining your staff.</p></div>
+  </div>
+</div>
+
+<hr class="rule">
+
+<div class="sec" style="display:flex;flex-direction:column;gap:40px;">
+  <div class="col" style="max-width:820px;">
+    <div class="eyebrow">Plainly</div>
+    <h2>What estate management actually is</h2>
+    <p>The term is used loosely, and it is used to mean three different things. Here is how we use it.</p>
+  </div>
+  <div class="three">
+    <div class="card"><b>Estate management</b><p>Running a private residence and everything attached to it on the owner's behalf: staff, vendors, maintenance, projects, budgets and records. The manager works for the household, not for a building or a landlord.</p></div>
+    <div class="card"><b>Property management</b><p>Administering a property as an investment. Rent collection, tenants, leases and compliance. The client is an investor, the occupant is a tenant, and the measure is yield.</p></div>
+    <div class="card"><b>Household staffing</b><p>Finding, vetting and placing the people who work in a private home. A placement agency's work ends when the candidate accepts. An estate manager's begins there.</p></div>
+  </div>
+  <div class="pull" style="max-width:940px;">Handgraaf Estates does the first and the third, and the record is what joins them. We place the person, then direct them inside the same written system that holds the property.</div>
+</div>
+
+<hr class="rule">
+
+<div class="sec two">
+  <div class="col">
+    <div class="eyebrow">Questions</div>
+    <h2 style="max-width:820px;">What owners ask before they start</h2>
+  </div>
+  <div class="col">
+    <div class="qa">
+      <div class="q">Do I have to replace the staff I already have?</div>
+      <div class="a">No. Existing staff and vendors are retained unless you ask otherwise. Intake catalogues who already works at the property and what they are responsible for, and they continue inside the record rather than outside it.</div>
+
+      <div class="q">What does estate management cost?</div>
+      <div class="a">It is scoped per principal, because an owner with one residence is not buying the same engagement as one with four homes and a vessel. Cost is driven by property count, staff headcount, asset classes and travel. We quote after the walkthrough, not before.</div>
+
+      <div class="q">How is this different from estate management software?</div>
+      <div class="a">Software is sold to you and then operated by you. The system here is operated by the manager who runs your estate, and it is populated as the work happens rather than by you entering data. You receive the record; you are not asked to maintain it.</div>
+
+      <div class="q">Who can see my records?</div>
+      <div class="a">Only named accounts you approve. Each estate is a separate, isolated database enforced at the database itself, not hidden behind a shared login. No owner's records touch another's, and there is no shared client directory.</div>
+
+      <div class="q">What happens if we stop working together?</div>
+      <div class="a">The record of your home stays with your home. Access is revocable by you at any time, and the estate does not restart from zero if the manager changes — including if the manager is us.</div>
+
+      <div class="q">Do you manage homes outside San Diego?</div>
+      <div class="a">Yes. Out-of-state and overseas residences run the identical workflow and appear on the same calendar in the same format. Our household staffing division also places nationally, with placements made in Miami, Atherton and Los Angeles.</div>
+
+      <div class="q">Is AI making decisions about my property?</div>
+      <div class="a">No. We use current tooling inside our own practice to structure records, draft scopes of work and summarise vendor history. A person signs off on every record before it reaches your dashboard, and your data is never used as training material.</div>
+    </div>
+  </div>
+</div>
+
+<div class="cta">
+  <h2 style="max-width:820px;">Look through a working estate</h2>
+  <p>The demonstration estate is fully populated and entirely fictional &mdash; a real structure with invented residents. Open any tab and see exactly what an owner sees.</p>
+  <div class="actions">
+    <a class="btn" href="https://demo.handgraafestates.com">View the demo dashboard</a>
+    <a class="btn-ghost" href="https://www.handgraafestates.com/#contact">Arrange a conversation</a>
+  </div>
+</div>
+
+<div class="ft">
+  <div>Handgraaf Estates &mdash; La Jolla, California</div>
+  <div style="display:flex;gap:28px;">
+    <a href="https://www.handgraafestates.com/" style="color:var(--muted);">handgraafestates.com</a>
+    <a href="https://www.handgraafestates.com/#contact" style="color:var(--muted);">Contact</a>
+  </div>
+</div>
+
+</body>
+</html>
