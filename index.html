@@ -82,6 +82,7 @@
   .three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;}
   .three b{font-size:17px;font-weight:500;}
   .three p{font-size:15px;color:var(--muted);line-height:1.65;}
+  .four{grid-template-columns:repeat(4,minmax(0,1fr));}
   .cal{background:var(--surface);border:1px solid var(--rule);display:flex;flex-direction:column;}
   .cal .hd{padding:18px 24px;border-bottom:1px solid var(--hair);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--faint);}
   .row{display:flex;gap:18px;padding:16px 24px;border-bottom:1px solid var(--hair);align-items:baseline;}
@@ -126,7 +127,7 @@
   .listed b{font-weight:500;color:var(--ink);}
   .band{background:var(--sand);padding:clamp(44px,6vw,80px) var(--pad);display:flex;flex-direction:column;gap:36px;}
   @media (max-width: 900px){
-    .two,.steps,.stages,.three,.pair{grid-template-columns:1fr;}
+    .two,.steps,.stages,.three,.pair,.four{grid-template-columns:1fr;}
     .fin th:nth-child(3),.fin td:nth-child(3),.fin th:nth-child(4),.fin td:nth-child(4){display:none;}
     .steps{gap:22px;}
     .step{border-top-color:var(--accent);}
@@ -390,10 +391,11 @@
 <div class="sec" style="display:flex;flex-direction:column;gap:26px;">
   <div class="eyebrow">Nine&nbsp;/&nbsp;Discretion</div>
   <h2 style="max-width:820px;">Your records are yours alone</h2>
-  <div class="three" style="margin-top:10px;">
+  <div class="three four" style="margin-top:10px;">
     <p>Each estate is a separate, isolated database. No owner's records touch another's, and there is no shared directory of clients.</p>
     <p>Access is granted to named accounts only, enforced at the database itself &mdash; not merely hidden behind a login screen.</p>
     <p>Access is revocable at any time, by you. Should our engagement end, the record of your home remains with your home.</p>
+    <p>The infrastructure itself is independently certified &mdash; SOC&nbsp;2 Type&nbsp;II and ISO&nbsp;27001 through Google Cloud, SOC&nbsp;2 Type&nbsp;II through Netlify. Not our word for it.</p>
   </div>
 </div>
 
