@@ -1,3 +1,16 @@
 [build]
   publish = "."
 
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "DENY"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"
+    # Static marketing page: no client-side script anywhere except two
+    # application/ld+json blocks, which CSP does not treat as executable
+    # script. style-src needs 'unsafe-inline' for the page's own inline
+    # <style> block plus the Google Fonts stylesheet; there is no fetch/XHR
+    # on this page at all, so connect-src stays at 'none'.
+    Content-Security-Policy = "default-src 'self'; script-src 'none'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
